@@ -31,6 +31,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
+
 /* Input + tombol */
 .todo-input {
   width: 75%;
@@ -44,6 +45,11 @@ body {
 .todo-input:focus {
   outline: none;
   border-color: #3b82f6;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
 }
 
 .btn {
