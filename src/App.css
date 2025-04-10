@@ -1,0 +1,125 @@
+/* Reset dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #313030, #221f1f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container utama */
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(34, 27, 27);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Judul di atas tengah */
+.todo-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input + tombol */
+.todo-input {
+  width: 75%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-blue {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #2563eb;
+}
+
+.btn-edit {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-edit:hover {
+  background-color: #2563eb;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+/* Filter */
+.filter-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.filter-group button {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.filter-group button.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,51 @@
+/* TodoItem.css */
+
+/* Fade & slide animation saat todo muncul */
+.todo-item {
+    animation: fadeSlideIn 0.3s ease;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Efek hover untuk tombol */
+.todo-actions button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Input saat editing */
+.todo-edit-input {
+    border: 1px solid #cbd5e1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease;
+}
+
+.todo-edit-input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* Checkbox custom look (optional) */
+.todo-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #3b82f6;
+}
+
+/* Selesai = line-through dan warna abu */
+.todo-completed {
+    text-decoration: line-through;
+    color: #6b7280;
+}
